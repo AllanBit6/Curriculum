@@ -1,0 +1,369 @@
+body{
+    margin: 0;
+    box-sizing: border-box;
+    padding: 0;
+    background: linear-gradient(rgba(59, 5, 255, 0.329), rgba(0, 0, 0, 0.288)), url("https://wallpaperaccess.com/full/1102022.jpg");
+    background-attachment: fixed;
+}
+
+html {
+    scroll-behavior: smooth;
+  }
+
+/*Barra de navegacion*/
+header{
+    background-color: white;
+    padding: 150px 0px;
+}
+header nav{
+    top: 0;
+    width: 100%;
+    height: 85px;
+    background-color: rgba(0, 0, 0, 0.945);
+    position: fixed;
+    backdrop-filter: blur(15px);
+    align-content: center ;
+    z-index: 5;
+}
+.espacio{
+    top: 0;
+    width: 100%;
+    height: 85px;
+}
+
+header nav ul{
+    font-family: "Raleway", serif;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+}
+
+header nav ul li{
+    list-style: none;
+    width: 100%;
+}
+
+header nav ul li a{
+    padding: 30px 25%;
+    text-decoration: none;
+    color: white;
+    transition: 0.5s;
+    font-size: 15px;
+}
+
+header nav ul li a:hover{
+    background-color: white;
+    color: black;
+    transition: 0.5s;
+    font-weight: bold;
+}
+
+/*Contenido principal*/
+header div{
+
+    text-align: center;
+    font-family: "Raleway", sans-serif;
+}
+header div h1{
+    font-size: 80px;
+}
+header div h2{
+    font-size: 30px;
+}
+header div h3{
+    font-family: "Merriweather", serif;
+    font-size: 20px;
+    color: gray;
+}
+.barra{
+    width: 30%;
+    margin: auto;
+    border: solid 2px black;
+}
+header div a button{
+    border: none;
+    padding: 20px 60px;
+    border-radius: 15px;
+    background-color: black;
+    color: white;
+    font-size: 15px;
+    font-family: "Raleway", serif;
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+header div a button:hover{
+    background-color: white;
+    color: black;
+    transition: 0.5s;
+    border: 3px solid black;
+}
+header div a button:focus{
+    padding: 20px 70px;
+    font-size: 25px;
+}
+
+/*Contenido principal*/
+.datos{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    background-color: white;
+    backdrop-filter: blur(30px);
+}
+.datos div{
+    margin: 20px;
+    padding-bottom: 50px;
+    width: 25%;
+}
+
+.datos .foto-perfil img{
+    width: 100%;
+    border-radius: 20px;
+    box-shadow: 3px 3px 10px 3px rgba(0, 0, 0, 0.485);
+}
+
+.parrafo{
+    justify-content: start;
+    
+}
+.parrafo h2{
+    text-align: center;
+    font-size: 25px;
+    font-family: "Raleway", serif;
+}
+.parrafo p{
+    font-size: 17px;
+    text-align: justify;
+    font-family: "Raleway", serif;
+}
+
+.contenido{
+    display: flex;
+    justify-content: center;
+}
+
+.habilidades{
+    font-family: "Raleway", serif;
+    padding: 30px 60px 80px 60px;
+    margin: 90px 20px;
+    backdrop-filter: blur(20px);
+    background-color: rgba(0, 0, 0, 0.513);
+    width: 60vh;
+    transition: 0.2s;
+}
+.habilidades:hover{
+    background-color: rgba(58, 58, 58, 0.513);
+    transition: 0.2s;
+    width: 60vh;
+}
+
+.habilidades h2, ol{
+    color: white;
+}
+.habilidades h2{
+    font-size: 30px;
+    text-align: center;
+}
+.habilidades ol{
+    font-size: 20px;
+    line-height: 35px;
+}
+
+/*Galeria de imagenes*/
+.proyectos{
+    margin-top: 40px;
+    background-color: white;
+}
+.proyectos .galeria{
+    padding: 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.proyectos .galeria .caja{
+    margin: 10px;
+  
+}
+
+.proyectos .galeria .caja img{
+    width: 40vh;
+    border-radius: 15px;
+    filter: blur(2px) grayscale(0.8);
+    transition: 0.2s;
+    box-shadow: 3px 3px 10px 3px rgba(0, 0, 0, 0.485);
+    
+}
+
+.proyectos .galeria .caja img:hover{
+
+    filter: blur(0px) grayscale(0);
+    width: 45vh;
+    transition: 0.2s;
+}
+
+.proyectos h2{
+    font-size: 40px;
+    color: black;
+    font-family: "Raleway", serif;
+    text-align: center;
+    padding: 50px 10px 0px;
+}
+.proyectos .galeria .caja p{
+    font-family: "Raleway", serif;
+    font-size: 15px;
+    color: rgb(37, 37, 37);
+    text-align: center;
+}
+
+
+/*Formulario*/
+
+.formulario{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 50px;
+}
+
+.formulario h2{
+    font-family: "Raleway", serif;
+    color: white;
+    font-size: 30px;
+    text-align: center;
+}
+
+.formulario form{
+    width: 40%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    backdrop-filter: blur(15px);
+    border: 2px solid white;
+    background-color: rgba(0, 0, 0, 0.118);
+    border-radius: 15px;    
+}
+
+.formulario input, textarea{
+    outline: none;
+    margin: 0px auto 20px;
+    width: 50%;
+    transition: 0.5s;
+    color: white;
+    font-family: "Raleway", serif;
+    text-align: center;
+}
+
+.formulario input:focus, textarea:focus{
+    margin: 20px auto 20px;
+}
+
+.formulario label{
+    color: rgb(255, 255, 255);
+    margin: 15px;
+    display: block;
+    font-weight: bold;
+    font-family: "Raleway", serif;
+}
+
+.formulario input[type="text"]{
+    height: 30px;
+    color: white;
+    background-color: rgba(255, 255, 255, 0);
+    border: 3px solid white;
+    border-radius: 15px;
+}
+
+.formulario input[type="text"]:focus::placeholder{
+    transition: 0.5s;
+    color: white;
+}
+
+.formulario textarea{
+    height: 100px;
+    color: white;
+    background-color: rgba(255, 255, 255, 0);
+    border: 3px solid white;
+    border-radius: 15px;
+}
+
+.formulario input[type="text"]:focus, textarea:focus{
+    width: 90%;
+    transition: 0.5s;
+    background-color: rgba(255, 255, 255, 0.264);
+
+}
+
+.formulario textarea:focus::placeholder{
+    transition: 0.5s;
+    color: white;
+}
+
+.formulario form input[type="submit"], .formulario form input[type="reset"]{
+    height: 50px;
+    color: rgb(255, 255, 255);
+    font-family: "Raleway", serif;
+    border: 2px;
+    border-radius: 15px;
+    background-color: rgb(99, 99, 99);
+}
+
+.formulario form input[type="submit"]:hover{
+    width: 90%;
+    color:black;
+    background-color: rgb(255, 255, 255);
+    font-weight: bold;
+}
+
+.formulario form input[type="reset"]:hover{
+    width: 90%;
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    border: solid 3px rgb(255, 255, 255);
+}
+
+/*Pie de pagina*/
+footer{
+
+    font-family: "Raleway", serif;
+    color: white;
+    background-color: black;
+    width: 100%;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+}
+
+footer div{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+footer div i{
+    color: white;
+    font-size: 30px;
+}
+footer div a{
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+    margin: 10px;
+    transition: 0.2s;
+}
+
+footer div a:hover{
+    font-weight: bold;
+    transition: 0.2s;
+    font-size: 25px;
+    border-bottom: 2px solid white;
+}
