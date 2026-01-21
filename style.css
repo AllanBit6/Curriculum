@@ -189,11 +189,14 @@ header div a button:focus{
 .proyectos .galeria a{
     text-decoration: none;
     font-style: normal;
+    display: inline-flex;
+    flex-direction: column;
 }
 
 .proyectos .galeria a .caja{
     margin: 9px;
-  
+    display: inline-flex;
+    flex-direction: column;
 }
 
 .proyectos .galeria a .caja img{
