@@ -49,7 +49,7 @@ header nav ul li a{
     text-decoration: none;
     color: white;
     transition: 0.5s;
-    font-size: 15px;
+    font-size: 13px;
 }
 
 header nav ul li a:hover{
@@ -186,12 +186,17 @@ header div a button:focus{
     flex-wrap: wrap;
 }
 
-.proyectos .galeria .caja{
-    margin: 10px;
+.proyectos .galeria a{
+    text-decoration: none;
+    font-style: normal;
+}
+
+.proyectos .galeria a .caja{
+    margin: 9px;
   
 }
 
-.proyectos .galeria .caja img{
+.proyectos .galeria a .caja img{
     width: 40vh;
     border-radius: 15px;
     filter: blur(2px) grayscale(0.8);
@@ -200,10 +205,10 @@ header div a button:focus{
     
 }
 
-.proyectos .galeria .caja img:hover{
+.proyectos .galeria a .caja img:hover{
 
     filter: blur(0px) grayscale(0);
-    width: 45vh;
+    width: 41vh;
     transition: 0.2s;
 }
 
@@ -214,7 +219,7 @@ header div a button:focus{
     text-align: center;
     padding: 50px 10px 0px;
 }
-.proyectos .galeria .caja p{
+.proyectos .galeria a .caja p{
     font-family: "Raleway", serif;
     font-size: 15px;
     color: rgb(37, 37, 37);
